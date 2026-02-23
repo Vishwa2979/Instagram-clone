@@ -1,0 +1,29 @@
+/* #eg1{
+    width: 500px;
+    height: 200px;
+    background-color: lightblue;
+}
+#eg2{
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-top:10px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding:10px 20px 30px 40px;
+    border: 5px solid blue;
+} */
+#eg3{
+    width: 500px;
+    height: 350px;
+    background-color: pink;
+    /* margin: 30px 30px 30px 30px; background-color: lightseagreen;
+    padding: 20px 20px 20px 20px; background-color: mediumpurple;
+    border: 30px solid black;
+    box-shadow: 10px 10px 5px grey;
+    border-radius:10px; */
+    border-width: 10px;
+    border-style: ridge;
+    border-color: brown;
+}

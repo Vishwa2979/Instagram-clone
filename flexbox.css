@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+.ms-header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: #202020;
+}
+
+.ms-logo {
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(to right, #00a4ef, #7fba00, #f25022, #ffb900);
+    margin-right: 10px;
+}
+
+.header-left { display: flex; align-items: center; width: 250px; }
+.brand-name { font-size: 12px; }
+
+.header-center { flex: 1; display: flex; justify-content: center; }
+.search-container {
+    background: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    padding: 4px 10px;
+}
+
+.search-container input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    outline: none;
+    font-size: 13px;
+}
+
+.header-right { 
+    display: flex; 
+    align-items: center; 
+    width: 250px; 
+    justify-content: flex-end; 
+    gap: 15px;
+}
+
+.profile-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    border: 1px solid #444;
+}
+
+.stats { font-size: 10px; color: #aaa; }
+.stats strong { color: white; }
+
+/* Main App Body */
+.app-body {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar Styles */
+.side-nav {
+    width: 72px;
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.nav-item {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #b0b0b0;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-item.active {
+    background-color: #2d2d2d;
+    color: #ff7f5c;
+    border-radius: 4px;
+    margin: 0 4px;
+}
+
+.nav-item.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 16px;
+    background: #ff7f5c;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid currentColor;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+.dot {
+    position: absolute;
+    top: 12px;
+    right: 22px;
+    width: 6px;
+    height: 6px;
+    background: #ff7f5c;
+    border-radius: 50%;
+}
+
+/* Content & Box Layout Styles */
+.content-area {
+    flex: 1;
+    padding: 20px;
+}
+
+.box-container {
+    display: flex;
+    gap: 12px;
+    height: 500px;
+}
+
+.hero-box {
+    flex: 2;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+}
+
+.right-column {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.medium-box {
+    flex: 2;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+}
+
+.bottom-row {
+    flex: 1;
+    display: flex;
+    gap: 12px;
+}
+
+.small-box {
+    flex: 1;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+}

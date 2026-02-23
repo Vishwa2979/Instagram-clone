@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriceWise Pro | Flipkart Analytics</title>
+    <link rel="stylesheet" href="webpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="logo-icon">P</div>
+                <span>PriceWise</span>
+            </div>
+            <nav class="menu">
+                <button class="menu-item active" onclick="showPage('dashboard')">
+                    <i data-lucide="layout-dashboard"></i> Dashboard
+                </button>
+                <button class="menu-item" onclick="showPage('trending')">
+                    <i data-lucide="trending-up"></i> Trending
+                </button>
+                <button class="menu-item" onclick="showPage('alerts')">
+                    <i data-lucide="bell"></i> My Alerts
+                </button>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">G</div>
+                <div class="user-info">
+                    <p class="user-name">GWC Candidate</p>
+                    <p class="user-role">Beta Tester</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section id="dashboard" class="page active">
+                <header class="page-header">
+                    <h1>Real-time Tracker</h1>
+                    <p>Enter a Flipkart URL to analyze price trends.</p>
+                </header>
+
+                <div class="search-box">
+                    <input type="text" id="urlInput" placeholder="Paste Flipkart product link here...">
+                    <button class="primary-btn" onclick="analyzePrice()">Analyze</button>
+                </div>
+
+                <div id="resultsArea" class="hidden">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span>Current Price</span>
+                            <h2 id="priceVal">₹0</h2>
+                        </div>
+                        <div class="stat-card">
+                            <span>Price Rating</span>
+                            <h2 class="green">Good Buy</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="trending" class="page">
+                <header class="page-header">
+                    <h1>Trending Today</h1>
+                    <p>Top products being tracked by the community.</p>
+                </header>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Price Drop</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>iPhone 15</td><td>Electronics</td><td class="green">↓ 12%</td></tr>
+                            <tr><td>Sony WH-1000XM5</td><td>Audio</td><td class="green">↓ 5%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="alerts" class="page">
+                <header class="page-header">
+                    <h1>Notification Settings</h1>
+                </header>
+                <div class="alert-settings">
+                    <p>Get notified via email when your items hit your target price.</p>
+                    <div class="toggle-group">
+                        <label>Email Alerts</label>
+                        <input type="checkbox" checked>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Simple Logic to switch pages
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+            
+            document.getElementById(pageId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

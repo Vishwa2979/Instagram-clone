@@ -1,0 +1,16 @@
+.footer{
+    background-color: #000000;
+    display:flex;
+    margin:auto;
+}
+.main-footer{
+    width:80vw;
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column;
+    margin:auto;
+}
+#footer-logo h1{
+    color:#ffffff;
+    font-size:24px;
+}

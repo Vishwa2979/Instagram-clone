@@ -1,0 +1,142 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+    font-family: Arial, sans-serif;
+    width: 300px;
+    height:350px;
+    border-width: 0.1px;
+    accent-color: #dbdbdb;
+    border-color: #dbdbdb;
+    border-style: solid;
+    margin: 20px auto;
+    }
+    #bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+    font-family: Arial, sans-serif;
+    width: 300px;
+    height:50px;
+    border-width: 0.1px;
+    accent-color: #dbdbdb;
+    border-color: #dbdbdb;
+    color: #dbdbdb;
+    border-style: solid;
+    margin: 20px auto;
+    bottom: 50px;
+    text-align: center;
+    }
+    #logo{
+    width: 150px;
+    height:10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #phone {
+    width: 80%;
+    height: 30px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px;
+    background-color: #262626;
+    border-radius: 5px;
+    accent-color: #dbdbdb;
+    border-color: #dbdbdb;
+    border-style: solid;
+    margin-top: 50px;        
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;     
+  }
+
+    #password {
+    width: 80%;
+    height: 30px;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px;
+    background-color: #262626;
+    border-radius: 5px;
+    accent-color: #dbdbdb;
+    border-color: #dbdbdb;
+    border-style: solid;         
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;     
+  
+  
+    }
+    #login-button {
+    width: 81%;
+    height: 30px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px;
+    background-color: #0095f6;
+    border-style: solid;
+    border:5px;
+    border-radius: 5px;          
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;  
+    }
+    
+    #line{
+    width: 80%;
+    height: 20px;
+    text-decoration-color: #dbdbdb;
+    text-align : center;
+    background-color: black;
+     font-family: Arial, sans-serif;
+    }
+    #facebook-login{
+    width: 70%;
+    height: 20px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    #bottom-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 50px;
+    }
+    
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  background-color: black; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin: 0 8px 12px 8px; 
+}
+

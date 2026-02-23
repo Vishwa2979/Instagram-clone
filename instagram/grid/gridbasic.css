@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    grid-template-rows: repeat(18, 30px);
+    gap: 8px;
+    background-color: white;
+    padding: 15px;
+}
+
+.box {
+    color: white;
+    padding: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.design { background-color: lightseagreen; }
+.web    { background-color: rgb(197, 128, 176); }
+.motion { background-color: #6820d3; }
+
+.box-ps     { grid-row: 1 / span 3; grid-column: 1 / span 1; }
+.box-iv     { grid-row: 1 / span 3; grid-column: 2 / span 1; }
+.box-ux     { grid-row: 1 / span 3; grid-column: 3 / span 1; }
+.box-main   { grid-row: 4 / span 6; grid-column: 2 / span 2; }
+.box-rust   { grid-row: 4 / span 3; grid-column: 5 / span 1; }
+.box-php    { grid-row: 7 / span 3; grid-column: 4 / span 1; }
+.box-html   { grid-row: 7 / span 3; grid-column: 5 / span 1; }
+.box-js     { grid-row: 10 / span 3; grid-column: 2 / span 1; }
+.box-layout { grid-row: 10 / span 3; grid-column: 3 / span 1; }
+.box-dev    { grid-row: 10 / span 6; grid-column: 4 / span 2; }
+.box-ruby   { grid-row: 13 / span 3; grid-column: 2 / span 1; }
+.box-css    { grid-row: 13 / span 3; grid-column: 3 / span 1; }
+.box-go     { grid-row: 16 / span 3; grid-column: 2 / span 1; }
+.box-mot    { grid-row: 16 / span 6; grid-column: 3 / span 2; }
+.box-maya   { grid-row: 16 / span 3; grid-column: 5 / span 1; }
+.box-nuke   { grid-row: 16 / span 3; grid-column: 6 / span 1; }
+.box-c4d    { grid-row: 19 / span 6; grid-column: 5 / span 1; }
+.box-ae     { grid-row: 22 / span 6; grid-column: 4 / span 1; }
