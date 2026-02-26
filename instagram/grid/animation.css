@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    display:flex;
+    justify-content:center;
+    height:100vh;
+}
+.box{
+   width:200px;
+   height: 200px;
+   border-radius: 50%;
+   background-color: lightseagreen;
+   border-top:5px dotted  black;
+   animation:slide 1s linear infinite forwards;
+}
+
+@keyframes slide {
+    0% { transform: rotate(0deg) translatey(0px); }
+    50% { transform: rotate(180deg) translatey(100px); }
+    /* 100% { transform: rotate(360deg) translatey(200px); } */
+}

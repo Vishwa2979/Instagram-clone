@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("jucca_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 100vh;
+}
+
+#one{
+height: 80px;
+  width: 1600px;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 400px;
+}
+a{
+  margin: 20px;
+  color: black;
+  text-decoration: none;
+}
+hr{
+  color: rgb(173, 158, 149);
+}
+.text{
+  position:absolute;
+  top:15%;
+  left:10%;
+  font-size: 70px;
+  color:black;
+  font-weight: 300;
+  font-family:Magnetik, sans-serif, sans-serif;
+  font-size: 80px;
+}
+#two{
+  .a{
+  width: 320px;
+  height: 300px;
+  background-color: rgba(255, 228, 196, 0.2);
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 20px;
+
+}
+}
+.card1{
+  border-radius: 10px;
+  background-color: rgba(255, 228, 196, 0.2);
+  backdrop-filter: blur(20px);
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  margin-top: 400px;
+}
+.overlay{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.upper-overlay{
+  height: 25px;
+  overflow: hidden;
+}
+
